@@ -16,7 +16,7 @@ if (process.env.MONGO_URI) {
         .then(() => console.log('MongoDB connected'))
         .catch(err => console.log(err));
 } else {
-    console.error('❌ MONGO_URI is not defined. Please add it to your .env file.');
+    console.error('Mongo URI error');
 }
 
 const chatRoute = require('./routes/chat');
@@ -26,15 +26,15 @@ app.get('/', (req, res) => {
 });
 
 if (process.env.HUGGINGFACE_API_KEY) {
-    console.log('✅ HUGGINGFACE_API_KEY is set.');
+    console.log('Hugging Face API Key works.');
 } else {
-    console.error('❌ HUGGINGFACE_API_KEY is not defined. Please add it to your .env file.');
+    console.error('Hugging Face API Key error.');
 }
 
 if (process.env.MONGO_URI) {
-    console.log('✅ MONGO_URI is set.');
+    console.log('Mongo URI works.');
 } else {
-    console.error('❌ MONGO_URI is not defined. Please add it to your .env file.');
+    console.error('Mongo URI error.');
 }
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
