@@ -4,10 +4,9 @@ const { OpenAI } = require('openai');
 
 const router = express.Router();
 
-// ✅ Use Hugging Face OpenAI-compatible endpoint
 const client = new OpenAI({
     baseURL: "https://router.huggingface.co/v1",
-    apiKey: process.env.HUGGINGFACE_API_KEY, // or HF_TOKEN
+    apiKey: process.env.HUGGINGFACE_API_KEY,
 });
 
 router.post('/chat', async (req, res) => {
