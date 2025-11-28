@@ -13,9 +13,9 @@
   }
 }
 .App-input {
-  color: black;              /* Text color */
-  background-color: white;   /* Input background */
-  border: 2px solid #61dafb; /* Optional styling */
+  color: black;              
+  background-color: white;   
+  border: 2px solid #61dafb; 
   border-radius: 10px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
@@ -34,7 +34,7 @@
 .App-header h1 {
   font-size: calc(16px + 3vmin);
   width: 100%;
-  text-align: center;  /* center the title */
+  text-align: center; 
   margin-bottom: 1rem;
   margin: 0;
   font-weight: 700;
